@@ -1,0 +1,6 @@
+config:
+ - dtOrdersDashboardOverview: dashboard.json
+dtOrdersDashboardOverview:
+ - name: dtOrders Dashboard Overview
+ - managementZoneId: projects/workshop/management-zone/dt-orders.id
+ - managementZoneName: projects/workshop/management-zone/dt-orders.name

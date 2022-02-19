@@ -1,0 +1,10 @@
+config:
+ - dt-jenkins: application.json
+ - dt-slides: application.json
+ - dt-orders: application.json
+dt-orders:
+ - name: dt-orders
+dt-jenkins:
+ - name: dt-jenkins
+dt-slides:
+ - name: dt-slides

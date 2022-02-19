@@ -1,0 +1,7 @@
+config:
+ - dt-orders: management-zone.json
+dt-orders:
+ - name: dt-orders
+ - environment: dt-orders
+ - app: dt-orders
+

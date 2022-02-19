@@ -1,0 +1,47 @@
+2022-02-17 14:44:13 DEBUG request log not activated
+2022-02-17 14:44:13 DEBUG response log not activated
+2022-02-17 14:44:13 INFO  Dynatrace Monitoring as Code v1.7.0
+2022-02-17 14:44:13 DEBUG Reading projects...
+2022-02-17 14:44:13 DEBUG   project - projects/workshop
+2022-02-17 14:44:13 DEBUG Processing file: projects/workshop/alerting-profile/alerting-profile.yaml
+2022-02-17 14:44:13 DEBUG Processing file: projects/workshop/app-detection-rule/app-detection-rule.yaml
+2022-02-17 14:44:13 DEBUG Processing file: projects/workshop/application/application.yaml
+2022-02-17 14:44:13 WARN  You are using the configuration 'application', which will be deprecated in v2.0.0. Replace with type 'application-web'.
+2022-02-17 14:44:13 DEBUG Processing file: projects/workshop/auto-tag/auto-tag.yaml
+2022-02-17 14:44:13 DEBUG Processing file: projects/workshop/dashboard/dashboard.yaml
+2022-02-17 14:44:13 DEBUG Processing file: projects/workshop/management-zone/management-zone.yaml
+2022-02-17 14:44:13 DEBUG Processing file: projects/workshop/notification/notification.yaml
+2022-02-17 14:44:13 DEBUG 		projects/workshop/app-detection-rule/dt-orders has dep on projects/workshop/application/dt-orders
+2022-02-17 14:44:13 DEBUG 		projects/workshop/alerting-profile/dtorderteam has dep on projects/workshop/management-zone/dt-orders
+2022-02-17 14:44:13 DEBUG 		projects/workshop/dashboard/dtOrdersDashboardOverview has dep on projects/workshop/management-zone/dt-orders
+2022-02-17 14:44:13 DEBUG 		projects/workshop/management-zone/dt-orders
+2022-02-17 14:44:13 DEBUG 		projects/workshop/application/dt-orders
+2022-02-17 14:44:13 DEBUG 		projects/workshop/notification/prodnotification
+2022-02-17 14:44:13 DEBUG 		projects/workshop/dashboard/dtOrdersDashboardOverview
+2022-02-17 14:44:13 DEBUG 		projects/workshop/auto-tag/environment
+2022-02-17 14:44:13 DEBUG 		projects/workshop/auto-tag/app
+2022-02-17 14:44:13 DEBUG 		projects/workshop/app-detection-rule/dt-orders
+2022-02-17 14:44:13 DEBUG 		projects/workshop/alerting-profile/dtorderteam
+2022-02-17 14:44:13 DEBUG Sorting projects...
+2022-02-17 14:44:13 INFO  Executing projects in this order: 
+2022-02-17 14:44:13 INFO  	1: projects/workshop (8 configs)
+2022-02-17 14:44:13 INFO  Processing environment workshop...
+2022-02-17 14:44:13 INFO  	Processing project projects/workshop...
+2022-02-17 14:44:13 DEBUG 		Deploying configs in this order: 
+2022-02-17 14:44:13 DEBUG 			1: projects/workshop/management-zone/management-zone.json
+2022-02-17 14:44:13 DEBUG 			2: projects/workshop/application/application.json
+2022-02-17 14:44:13 DEBUG 			3: projects/workshop/notification/notification.json
+2022-02-17 14:44:13 DEBUG 			4: projects/workshop/dashboard/dashboard.json
+2022-02-17 14:44:13 DEBUG 			5: projects/workshop/auto-tag/environment.json
+2022-02-17 14:44:13 DEBUG 			6: projects/workshop/auto-tag/app.json
+2022-02-17 14:44:13 DEBUG 			7: projects/workshop/app-detection-rule/rules.json
+2022-02-17 14:44:13 DEBUG 			8: projects/workshop/alerting-profile/profiles.json
+2022-02-17 14:44:13 DEBUG 		Validating config projects/workshop/management-zone/management-zone.json
+2022-02-17 14:44:13 DEBUG 		Validating config projects/workshop/application/application.json
+2022-02-17 14:44:13 DEBUG 		Validating config projects/workshop/notification/notification.json
+2022-02-17 14:44:13 ERROR 			Failed Id 'projects/workshop/alerting-profile/prodteam' was not available. Please make sure the reference exists.
+2022-02-17 14:44:13 DEBUG 		Validating config projects/workshop/dashboard/dashboard.json
+2022-02-17 14:44:13 DEBUG 		Validating config projects/workshop/auto-tag/environment.json
+2022-02-17 14:44:13 DEBUG 		Validating config projects/workshop/auto-tag/app.json
+2022-02-17 14:44:13 DEBUG 		Validating config projects/workshop/app-detection-rule/rules.json
+2022-02-17 14:44:13 DEBUG 		Validating config projects/workshop/alerting-profile/profiles.json

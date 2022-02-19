@@ -1,0 +1,24 @@
+{
+ "displayName": "{{.name}}",
+ "eventTypeFilters": [],
+ "managementZoneId": null,
+ "mzId": null,
+ "rules": [
+  {
+   "delayInMinutes": 0,
+   "severityLevel": "RESOURCE_CONTENTION",
+   "tagFilter": {
+    "includeMode": "NONE",
+    "tagFilters": []
+   }
+  },
+  {
+   "delayInMinutes": 0,
+   "severityLevel": "MONITORING_UNAVAILABLE",
+   "tagFilter": {
+    "includeMode": "NONE",
+    "tagFilters": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "active": false,
+ "alertingProfile": "{{ .alertingProfile }}",
+ "bccReceivers": [],
+ "body": "{ProblemDetailsHTML}",
+ "ccReceivers": [],
+ "name": "{{.name}}",
+ "receivers": [
+  "prod.team@email.com"
+ ],
+ "subject": "{State} Problem {ProblemID}: {ImpactedEntity}",
+ "type": "EMAIL"
+}

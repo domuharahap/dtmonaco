@@ -1,0 +1,6 @@
+2022-02-17 12:45:07 DEBUG request log not activated
+2022-02-17 12:45:07 DEBUG response log not activated
+2022-02-17 12:45:07 INFO  Dynatrace Monitoring as Code v1.7.0
+2022-02-17 12:45:07 DEBUG Reading projects...
+2022-02-17 12:45:07 DEBUG   project - projects/workshop
+2022-02-17 12:45:07 DEBUG Processing file: projects/workshop/auto-tag/auto-tag.yaml

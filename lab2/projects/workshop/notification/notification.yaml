@@ -1,0 +1,5 @@
+config:
+ - dtOrdersNotification: notification.json
+dtOrdersNotification:
+ - name: prod notification
+ - alertingProfile: projects/workshop/alerting-profile/dtOrdersTeam.id

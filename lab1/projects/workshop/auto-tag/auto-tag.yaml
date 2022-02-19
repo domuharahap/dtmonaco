@@ -1,0 +1,5 @@
+config:
+    - environment-tag: "auto-tag.json"
+
+environment-tag:
+    - name: "environment"

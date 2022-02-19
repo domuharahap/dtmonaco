@@ -1,0 +1,18 @@
+config:
+ - dt-slides: management-zone.json
+ - dt-orders: management-zone.json
+ - dt-jenkins: management-zone.json
+
+dt-orders:
+ - name: dt-orders
+ - environment: dt-orders
+ - app: dt-orders
+dt-jenkins:
+ - name: jenkins
+ - environment: jenkins
+ - app: jenkins
+dt-slides:
+ - name: dt-slides
+ - environment: dt-slides
+ - app: dt-slides
+
