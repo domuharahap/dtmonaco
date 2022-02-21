@@ -1,0 +1,12 @@
+{
+  "name": "{{.name}}",
+  "description": null,
+  "rules": [],
+  "entitySelectorBasedRules": [
+    {
+      "enabled": true,
+      "entitySelector": "type(SERVICE),databaseName.exists(),toRelationships.calls(type(SERVICE),tag(environment:{{.entity1}}))",
+      "valueFormat": "{{.entity1}}"
+    }
+  ]
+}

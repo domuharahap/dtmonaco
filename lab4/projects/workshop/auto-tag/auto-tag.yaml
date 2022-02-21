@@ -1,0 +1,14 @@
+config:
+ - app: app.json
+ - environment: environment.json
+ - database: database.json
+app:
+ - name: app
+ - entity1: dt-orders 
+ - entity2: dt-slides
+ - entity3: jenkins
+environment:
+ - name: environment
+database:
+ - name: database
+ - entity1: dt-orders

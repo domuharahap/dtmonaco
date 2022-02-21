@@ -1,0 +1,13 @@
+config:
+ - jenkinsteam: profile.json
+ - dtordersteam: profile.json
+ - dtslidesteam: profile.json
+dtslidesteam:
+ - name: dtslides team
+ - mzId: projects/workshop/management-zone/dt-slides.id
+jenkinsteam:
+ - name: jenkins team
+ - mzId: projects/workshop/management-zone/dt-jenkins.id
+dtordersteam:
+ - name: dtorders team
+ - mzId: projects/workshop/management-zone/dt-orders.id

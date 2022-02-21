@@ -1,0 +1,47 @@
+{
+  "name": "{{.name}}",
+  "description": null,
+  "rules": [
+    {
+      "type": "PROCESS_GROUP",
+      "enabled": true,
+      "valueFormat": "{ProcessGroup:KubernetesContainerName}",
+      "propagationTypes": [
+        "PROCESS_GROUP_TO_SERVICE"
+      ],
+      "conditions": [
+        {
+          "key": {
+            "attribute": "PROCESS_GROUP_PREDEFINED_METADATA",
+            "dynamicKey": "KUBERNETES_CONTAINER_NAME",
+            "type": "PROCESS_PREDEFINED_METADATA_KEY"
+          },
+          "comparisonInfo": {
+            "type": "STRING",
+            "operator": "EXISTS",
+            "value": null,
+            "negate": false,
+            "caseSensitive": null
+          }
+        }
+      ]
+    }
+  ],
+  "entitySelectorBasedRules": [
+    {
+      "enabled": true,
+      "entitySelector": "type(APPLICATION),fromRelationships.calls(type(SERVICE),tag(App:{{.entity1}}))",
+      "valueFormat": "{{.entity1}}"
+    },
+    {
+      "enabled": true,
+      "entitySelector": "type(APPLICATION),fromRelationships.calls(type(SERVICE),tag(App:{{.entity2}}))",
+      "valueFormat": "{{.entity2}}"
+    },
+    {
+      "enabled": true,
+      "entitySelector": "type(APPLICATION),fromRelationships.calls(type(SERVICE),tag(App:{{.entity3}}))",
+      "valueFormat": "{{.entity3}}"
+    }
+  ]
+}

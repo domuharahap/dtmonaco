@@ -1,0 +1,77 @@
+2022-02-19 01:21:55 DEBUG request log not activated
+2022-02-19 01:21:55 DEBUG response log not activated
+2022-02-19 01:21:55 INFO  Dynatrace Monitoring as Code v1.7.0
+2022-02-19 01:21:55 DEBUG Reading projects...
+2022-02-19 01:21:55 DEBUG   project - projects/workshop
+2022-02-19 01:21:55 DEBUG Processing file: projects/workshop/alerting-profile/alerting-profile.yaml
+2022-02-19 01:21:55 DEBUG Processing file: projects/workshop/app-detection-rule/app-detection-rule.yaml
+2022-02-19 01:21:55 DEBUG Processing file: projects/workshop/application-web/application.yaml
+2022-02-19 01:21:55 DEBUG Processing file: projects/workshop/auto-tag/auto-tag.yaml
+2022-02-19 01:21:55 DEBUG Processing file: projects/workshop/dashboard/dashboard.yaml
+2022-02-19 01:21:55 DEBUG Processing file: projects/workshop/management-zone/management-zone.yaml
+2022-02-19 01:21:55 DEBUG Processing file: projects/workshop/notification/notification.yaml
+2022-02-19 01:21:55 DEBUG 		projects/workshop/notification/jenkinsnotification has dep on projects/workshop/alerting-profile/jenkinsteam
+2022-02-19 01:21:55 DEBUG 		projects/workshop/notification/dtordersnotification has dep on projects/workshop/alerting-profile/dtordersteam
+2022-02-19 01:21:55 DEBUG 		projects/workshop/notification/dtslides has dep on projects/workshop/alerting-profile/dtslidesteam
+2022-02-19 01:21:55 DEBUG 		projects/workshop/app-detection-rule/dt-jenkins has dep on projects/workshop/application-web/dt-jenkins
+2022-02-19 01:21:55 DEBUG 		projects/workshop/app-detection-rule/dt-slides has dep on projects/workshop/application-web/dt-slides
+2022-02-19 01:21:55 DEBUG 		projects/workshop/app-detection-rule/dt-orders has dep on projects/workshop/application-web/dt-orders
+2022-02-19 01:21:55 DEBUG 		projects/workshop/alerting-profile/dtslidesteam has dep on projects/workshop/management-zone/dt-slides
+2022-02-19 01:21:55 DEBUG 		projects/workshop/dashboard/dtSlidesOverview has dep on projects/workshop/management-zone/dt-slides
+2022-02-19 01:21:55 DEBUG 		projects/workshop/alerting-profile/dtordersteam has dep on projects/workshop/management-zone/dt-orders
+2022-02-19 01:21:55 DEBUG 		projects/workshop/dashboard/dtOrdersOverview has dep on projects/workshop/management-zone/dt-orders
+2022-02-19 01:21:55 DEBUG 		projects/workshop/alerting-profile/jenkinsteam has dep on projects/workshop/management-zone/dt-jenkins
+2022-02-19 01:21:55 DEBUG 		projects/workshop/dashboard/jenkinsOverview has dep on projects/workshop/management-zone/dt-jenkins
+2022-02-19 01:21:55 DEBUG 		projects/workshop/management-zone/dt-slides
+2022-02-19 01:21:55 DEBUG 		projects/workshop/management-zone/dt-orders
+2022-02-19 01:21:55 DEBUG 		projects/workshop/management-zone/dt-jenkins
+2022-02-19 01:21:55 DEBUG 		projects/workshop/alerting-profile/dtslidesteam
+2022-02-19 01:21:55 DEBUG 		projects/workshop/alerting-profile/dtordersteam
+2022-02-19 01:21:55 DEBUG 		projects/workshop/alerting-profile/jenkinsteam
+2022-02-19 01:21:55 DEBUG 		projects/workshop/application-web/dt-orders
+2022-02-19 01:21:55 DEBUG 		projects/workshop/application-web/dt-slides
+2022-02-19 01:21:55 DEBUG 		projects/workshop/application-web/dt-jenkins
+2022-02-19 01:21:55 DEBUG 		projects/workshop/notification/dtslides
+2022-02-19 01:21:55 DEBUG 		projects/workshop/notification/dtordersnotification
+2022-02-19 01:21:55 DEBUG 		projects/workshop/notification/jenkinsnotification
+2022-02-19 01:21:55 DEBUG 		projects/workshop/dashboard/dtSlidesOverview
+2022-02-19 01:21:55 DEBUG 		projects/workshop/dashboard/jenkinsOverview
+2022-02-19 01:21:55 DEBUG 		projects/workshop/dashboard/dtOrdersOverview
+2022-02-19 01:21:55 DEBUG 		projects/workshop/auto-tag/environment
+2022-02-19 01:21:55 DEBUG 		projects/workshop/auto-tag/app
+2022-02-19 01:21:55 DEBUG 		projects/workshop/app-detection-rule/dt-orders
+2022-02-19 01:21:55 DEBUG 		projects/workshop/app-detection-rule/dt-slides
+2022-02-19 01:21:55 DEBUG 		projects/workshop/app-detection-rule/dt-jenkins
+2022-02-19 01:21:55 DEBUG Sorting projects...
+2022-02-19 01:21:55 INFO  Executing projects in this order: 
+2022-02-19 01:21:55 INFO  	1: projects/workshop (20 configs)
+2022-02-19 01:21:55 INFO  Processing environment workshop...
+2022-02-19 01:21:55 INFO  	Processing project projects/workshop...
+2022-02-19 01:21:55 DEBUG 		Deploying configs in this order: 
+2022-02-19 01:21:55 DEBUG 			1: projects/workshop/management-zone/management-zone.json
+2022-02-19 01:21:55 DEBUG 			2: projects/workshop/management-zone/management-zone.json
+2022-02-19 01:21:55 DEBUG 			3: projects/workshop/management-zone/management-zone.json
+2022-02-19 01:21:55 DEBUG 			4: projects/workshop/alerting-profile/profiles.json
+2022-02-19 01:21:55 DEBUG 			5: projects/workshop/alerting-profile/profiles.json
+2022-02-19 01:21:55 DEBUG 			6: projects/workshop/alerting-profile/profiles.json
+2022-02-19 01:21:55 DEBUG 			7: projects/workshop/application-web/application.json
+2022-02-19 01:21:55 DEBUG 			8: projects/workshop/application-web/application.json
+2022-02-19 01:21:55 DEBUG 			9: projects/workshop/application-web/application.json
+2022-02-19 01:21:55 DEBUG 			10: projects/workshop/notification/notification.json
+2022-02-19 01:21:55 DEBUG 			11: projects/workshop/notification/notification.json
+2022-02-19 01:21:55 DEBUG 			12: projects/workshop/notification/notification.json
+2022-02-19 01:21:55 DEBUG 			13: projects/workshop/dashboard/dashboard.json
+2022-02-19 01:21:55 DEBUG 			14: projects/workshop/dashboard/dashboard.json
+2022-02-19 01:21:55 DEBUG 			15: projects/workshop/dashboard/dashboard.json
+2022-02-19 01:21:55 DEBUG 			16: projects/workshop/auto-tag/environment.json
+2022-02-19 01:21:55 DEBUG 			17: projects/workshop/auto-tag/app.json
+2022-02-19 01:21:55 DEBUG 			18: projects/workshop/app-detection-rule/rules.json
+2022-02-19 01:21:55 DEBUG 			19: projects/workshop/app-detection-rule/rules.json
+2022-02-19 01:21:55 DEBUG 			20: projects/workshop/app-detection-rule/rules.json
+2022-02-19 01:21:55 DEBUG 		Applying config `dt-slides` using projects/workshop/management-zone/management-zone.json
+2022-02-19 01:22:05 ERROR HTTP Request failed with Error: Get "https://msd961.dynatrace-managed.com/e/fb891f23-4ced-4c04-ac0e-c23c358a84e5/api/config/v1/managementZones": dial tcp: lookup msd961.dynatrace-managed.com on 192.168.56.2:53: read udp 192.168.56.128:56051->192.168.56.2:53: read: host is down
+2022-02-19 01:22:05 INFO  Deployment summary:
+2022-02-19 01:22:05 ERROR Deployment to workshop failed with error!
+2022-02-19 01:22:05 ERROR 	Failed to get existing configs for api management-zone (HTTP 0)!
+    Response was: , responsible config: projects/workshop/management-zone/management-zone.json
+2022-02-19 01:22:05 ERROR Errors during deployment! Check log!
