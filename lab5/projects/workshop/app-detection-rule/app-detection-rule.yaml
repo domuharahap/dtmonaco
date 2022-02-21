@@ -1,0 +1,16 @@
+config:
+ - dt-orders: rules.json
+ - dt-jenkins: rules.json
+ - dt-slides: rules.json
+dt-orders:
+ - name: dt-orders
+ - applicationId: /projects/workshop/application-web/dt-orders.id 
+ - pattern: :30001
+dt-jenkins:
+ - name: dt-jenkins
+ - applicationId: /projects/workshop/application-web/dt-jenkins.id
+ - pattern: :31937
+dt-slides:
+ - name: dt-slides
+ - applicationId: /projects/workshop/application-web/dt-slides.id
+ - pattern: :30003

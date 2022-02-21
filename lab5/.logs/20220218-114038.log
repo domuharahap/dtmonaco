@@ -1,0 +1,12 @@
+2022-02-18 11:40:38 DEBUG request log not activated
+2022-02-18 11:40:38 DEBUG response log not activated
+2022-02-18 11:40:38 INFO  Dynatrace Monitoring as Code v1.7.0
+2022-02-18 11:40:38 DEBUG Reading projects...
+2022-02-18 11:40:38 DEBUG   project - projects/workshop
+2022-02-18 11:40:38 DEBUG Processing file: projects/workshop/alerting-profile/alerting-profile.yaml
+2022-02-18 11:40:38 DEBUG Processing file: projects/workshop/app-detection-rule/app-detection-rule.yaml
+2022-02-18 11:40:38 DEBUG Processing file: projects/workshop/application/application.yaml
+2022-02-18 11:40:38 WARN  You are using the configuration 'application', which will be deprecated in v2.0.0. Replace with type 'application-web'.
+2022-02-18 11:40:38 WARN  You are using the configuration 'application', which will be deprecated in v2.0.0. Replace with type 'application-web'.
+2022-02-18 11:40:38 WARN  You are using the configuration 'application', which will be deprecated in v2.0.0. Replace with type 'application-web'.
+2022-02-18 11:40:38 DEBUG Processing file: projects/workshop/auto-tag/auto-tag.yaml

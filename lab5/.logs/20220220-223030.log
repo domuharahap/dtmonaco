@@ -1,0 +1,9 @@
+2022-02-20 22:30:30 DEBUG request log not activated
+2022-02-20 22:30:30 DEBUG response log not activated
+2022-02-20 22:30:30 INFO  Dynatrace Monitoring as Code v1.7.0
+2022-02-20 22:30:30 DEBUG Reading projects...
+2022-02-20 22:30:30 DEBUG   project - projects/workshop
+2022-02-20 22:30:30 DEBUG Processing file: projects/workshop/alerting-profile/profile.yaml
+2022-02-20 22:30:30 DEBUG Processing file: projects/workshop/app-detection-rule/app-detection-rule.yaml
+2022-02-20 22:30:30 DEBUG Processing file: projects/workshop/application-web/application.yaml
+2022-02-20 22:30:30 DEBUG Processing file: projects/workshop/auto-tag/auto-tag.yaml

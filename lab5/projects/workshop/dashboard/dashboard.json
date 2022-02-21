@@ -1,0 +1,156 @@
+{
+ "dashboardMetadata": {
+  "dashboardFilter": {
+   "managementZone": {
+    "id": "{{.managementZoneId}}",
+    "name": "{{.managementZoneName}}"
+   },
+   "timeframe": null
+  },
+  "name": "{{.name}}",
+  "owner": "Dynatrace",
+  "shared": true,
+  "sharingDetails": {
+   "linkShared": true,
+   "published": true
+  }
+ },
+ "tiles": [
+  {
+   "bounds": {
+    "height": 228,
+    "left": 0,
+    "top": 0,
+    "width": 228
+   },
+   "configured": true,
+   "entitySelector": null,
+   "name": "Problems",
+   "problemSelector": null,
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "OPEN_PROBLEMS"
+  },
+  {
+   "bounds": {
+    "height": 228,
+    "left": 228,
+    "top": 0,
+    "width": 228
+   },
+   "chartVisible": true,
+   "configured": true,
+   "filterConfig": null,
+   "name": "Host health",
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "HOSTS"
+  },
+  {
+   "bounds": {
+    "height": 228,
+    "left": 722,
+    "top": 0,
+    "width": 228
+   },
+   "chartVisible": true,
+   "configured": true,
+   "filterConfig": null,
+   "name": "Application health",
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "APPLICATIONS"
+  },
+  {
+   "bounds": {
+    "height": 228,
+    "left": 456,
+    "top": 0,
+    "width": 266
+   },
+   "chartVisible": true,
+   "configured": true,
+   "filterConfig": null,
+   "name": "Service health",
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "SERVICES"
+  },
+  {
+   "bounds": {
+    "height": 228,
+    "left": 228,
+    "top": 228,
+    "width": 228
+   },
+   "chartVisible": true,
+   "configured": true,
+   "filterConfig": null,
+   "name": "Synthetic monitor health",
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "SYNTHETIC_TESTS"
+  },
+  {
+   "bounds": {
+    "height": 228,
+    "left": 456,
+    "top": 228,
+    "width": 266
+   },
+   "chartVisible": true,
+   "configured": true,
+   "filterConfig": null,
+   "name": "Database health",
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DATABASES_OVERVIEW"
+  },
+  {
+   "bounds": {
+    "height": 228,
+    "left": 722,
+    "top": 228,
+    "width": 228
+   },
+   "chartVisible": true,
+   "configured": true,
+   "filterConfig": null,
+   "name": "Synthetic monitor health",
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "SYNTHETIC_TESTS"
+  },
+  {
+   "bounds": {
+    "height": 228,
+    "left": 0,
+    "top": 228,
+    "width": 228
+   },
+   "chartVisible": true,
+   "configured": true,
+   "filterConfig": null,
+   "name": "Database health",
+   "tileFilter": {
+    "managementZone": null,
+    "timeframe": null
+   },
+   "tileType": "DATABASES_OVERVIEW"
+  }
+ ]
+}
