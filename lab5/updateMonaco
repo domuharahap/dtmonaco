@@ -17,7 +17,9 @@ pipeline {
     stage('Validate Configuration') {
       steps {
         container('ace') {
-          script 'monaco -d -e ./lab4/environment.yaml'
+          script {
+	    sh 'monaco -d -e ./lab4/environment.yaml'
+	  }
         }
       }
     }
