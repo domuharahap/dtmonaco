@@ -1,0 +1,38 @@
+pipeline {
+  agent {
+    kubernetes {
+      //cloud 'kubernetes'
+      containerTemplate {
+        name 'ace'
+        image 'dynatraceace/monaco-runner'
+        ttyEnabled true
+        command 'cat'
+      }
+    }
+  }
+
+  stages {
+  
+    //Validation 
+    stage('Validate Configuration') {
+      steps {
+        container('ace') {
+          script {
+	    sh 'monaco -d -e lab5/environments.yaml lab5/'
+	  }
+        }
+      }
+    }
+
+    //deploy config 
+    stage('Deploy Configuration') {
+      steps {
+        container('ace') {
+          script {
+            sh 'monaco -e lab5/environments.yaml lab5/'
+          }
+        }
+      }
+    }
+  }
+}
