@@ -15,8 +15,10 @@ pipeline {
   
     //Validation 
     stage('Validate Configuration') {
-      container('ace') {
-        script 'monaco -d -e ./lab4/environment.yaml'
+      steps {
+        container('ace') {
+          script 'monaco -d -e ./lab4/environment.yaml'
+        }
       }
     }
 
@@ -32,4 +34,6 @@ pipeline {
     }
   }
 }
+
+
 
