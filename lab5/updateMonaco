@@ -18,7 +18,7 @@ pipeline {
       steps {
         container('ace') {
           script {
-	    sh 'monaco -d -e ./lab4/environment.yaml'
+	    sh 'monaco -d -e lab5/environment.yaml'
 	  }
         }
       }
@@ -29,7 +29,7 @@ pipeline {
       steps {
         container('ace') {
           script {
-            sh 'monaco e ./lab4/environment.yaml'
+            sh 'monaco e lab5/environment.yaml'
           }
         }
       }
