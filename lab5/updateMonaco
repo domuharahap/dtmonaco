@@ -29,7 +29,7 @@ pipeline {
       steps {
         container('ace') {
           script {
-            sh 'monaco e lab5/environments.yaml lab5/'
+            sh 'monaco -e lab5/environments.yaml lab5/'
           }
         }
       }
