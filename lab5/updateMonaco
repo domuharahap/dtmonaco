@@ -4,7 +4,7 @@ pipeline {
       //cloud 'kubernetes'
       containerTemplate {
         name 'ace'
-        image 'dynatrace/monaco-runner'
+        image 'dynatraceace/monaco-runner'
         ttyEnabled true
         command 'cat'
       }
