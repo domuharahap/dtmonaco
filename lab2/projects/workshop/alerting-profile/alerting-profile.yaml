@@ -1,5 +1,0 @@
-config:
- - dtOrdersTeam: profiles.json
-dtOrdersTeam:
- - name: dt-order team
- - managementZoneId: projects/workshop/management-zone/dt-orders.id

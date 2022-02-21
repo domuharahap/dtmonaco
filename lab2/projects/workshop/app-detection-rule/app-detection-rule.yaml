@@ -2,5 +2,5 @@ config:
  - dt-orders: rules.json
 dt-orders:
  - name: dt-orders
- - applicationId: /projects/workshop/application/dt-orders.id 
+ - applicationId: /projects/workshop/application-web/dt-orders.id 
  - pattern: :30001
