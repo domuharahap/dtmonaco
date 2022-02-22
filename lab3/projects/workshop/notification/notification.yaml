@@ -1,13 +1,5 @@
 config:
- - jenkinsnotification: notification.json
  - dtordersnotification: notification.json
- - dtslides: notification.json
-jenkinsnotification:
- - name: jenkins notification
- - alertingProfile: projects/workshop/alerting-profile/jenkinsteam.id
-dtslides:
- - name: dtslides team
- - alertingProfile: projects/workshop/alerting-profile/dtslidesteam.id
 dtordersnotification:
  - name: dtorders notification
  - alertingProfile: projects/workshop/alerting-profile/dtordersteam.id
