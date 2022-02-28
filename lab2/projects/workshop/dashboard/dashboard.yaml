@@ -1,6 +1,42 @@
 config:
- - dtOrdersDashboardOverview: dashboard.json
-dtOrdersDashboardOverview:
- - name: dtOrders Dashboard Overview
+ - dtOrdersOverview: dashboard.json
+ - apps: application_overview.json
+ - capacity: capacity_overview.json
+ - service: service_overview.json
+ - database: database_overview.json 
+ - network: network_overview.json
+ - rum: rum_overview.json
+
+dtOrdersOverview:
+ - name: Prod Dashboard Overview
  - managementZoneId: projects/workshop/management-zone/dt-orders.id
  - managementZoneName: projects/workshop/management-zone/dt-orders.name
+apps:
+ - name: "Application Overview"
+ - owner: "domu.harahap@dynatrace.com"
+ - capacity: projects/workshop/dashboard/capacity.id
+ - service: projects/workshop/dashboard/service.id
+ - database: projects/workshop/dashboard/database.id
+ - network: projects/workshop/dashboard/network.id
+ - rum: projects/workshop/dashboard/rum.id
+ - revenue: id
+capacity:
+ - name: "Capacity Management"
+ - backbtn: "id"
+ - owner: "domu.harahap@dynatrace.com"
+service:
+ - name: "Service Overview"
+ - backbtn: "id"
+ - owner: domu.harahap@dynatrace.com
+database:
+ - name: Database Overview
+ - backbtn: "id"
+ - owner: domu.harahap@dynatrace.com
+network:
+ - name: Network Overview
+ - backbtn: "id"
+ - owner: domu.harahap@dynatrace.com
+rum:
+ - name: RUM Overview
+ - backbtn: "id"
+ - owner: domu.harahap@dynatrace@gmail.com

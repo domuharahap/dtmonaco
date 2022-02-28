@@ -1,0 +1,389 @@
+{
+  "dashboardMetadata": {
+    "name": " {{ .name }}",
+    "shared": true,
+    "owner": " {{ .owner }}"
+  },
+  "tiles": [
+    {
+      "name": "Service health",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 418,
+        "left": 0,
+        "width": 304,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 380,
+        "left": 342,
+        "width": 1140,
+        "height": 228
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Response time",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:service.response.time",
+              "aggregation": "AVG",
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": false,
+              "aggregationRate": "TOTAL"
+            },
+            {
+              "metric": "builtin:service.requestCount.total",
+              "aggregation": "NONE",
+              "type": "BAR",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "nullbuiltin:service.requestCount.total|NONE|TOTAL|BAR|SERVICE": {
+              "lastModified": 1625049237335,
+              "customColor": "#00A300"
+            },
+            "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+              "lastModified": 1625049270300,
+              "customColor": "#D11E00"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1482,
+        "width": 76,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## [⇦](#dashboard;id={{ .backbtn }})\n![BackButton]()"
+    },
+    {
+      "name": "Service Health",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Service Details",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 342,
+        "width": 1140,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Problems",
+      "tileType": "OPEN_PROBLEMS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Response time",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 608,
+        "left": 342,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {},
+      "customName": "Response time",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.response.time",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 3000000,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 12000000,
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Failure rate (any  errors)",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 608,
+        "left": 1102,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {},
+      "customName": "Failure rate (any  errors)",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:service.errors.total.rate",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.service"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 3,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 12,
+                "color": "#dc172a"
+              }
+            ],
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Request count",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 608,
+        "left": 722,
+        "width": 380,
+        "height": 228
+      },
+      "tileFilter": {},
+      "customName": "Request count",
+      "queries": [
+        {
+          "id": "A",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "metricSelector": "builtin:service.requestCount.total:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {},
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#dc172a"
+              },
+              {
+                "value": 50,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 100,
+                "color": "#7dc540"
+              }
+            ],
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Host health",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 0,
+        "width": 304,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Synthetic monitor health",
+      "tileType": "SYNTHETIC_TESTS",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 0,
+        "width": 304,
+        "height": 190
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Success order over time",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 342,
+        "width": 1140,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 342,
+        "width": 1140,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Success Order Over Time",
+      "query": "SELECT distinct Datetime(endTime,\"HH:mm\", 15) AS mytime, COUNT(*) as 'No of Success Order' FROM usersession WHERE useraction.name IN ('loading of page /checkout/onepage/success/', 'loading of page /de/de/checkout/onepage/success/', 'loading of page /mx/es/checkout/onepage/success/', 'loading of page /co/es/checkout/onepage/success/',  \"loading of page /pl/pl/checkout/onepage/success/\",  \"loading of page /fr/fr/checkout/onepage/success/\", \"loading of page /gb/en/checkout/register/\", \"loading of page /it/it/checkout/register/\") GROUP BY mytime",
+      "type": "COLUMN_CHART",
+      "visualizationConfig": {
+        "hasAxisBucketing": false
+      },
+      "limit": 50
+    }
+  ]
+}

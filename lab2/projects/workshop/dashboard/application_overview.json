@@ -1,0 +1,219 @@
+{
+  "dashboardMetadata": {
+    "name": "{{ .name }}",
+    "shared": true,
+    "owner": "domu.harahap@dynatrace.com"
+  },
+  "tiles": [
+    {
+      "name": "Application Overview",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 228,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Service health",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 228,
+        "width": 228,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Host health",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 456,
+        "width": 228,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Database health",
+      "tileType": "DATABASES_OVERVIEW",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 456,
+        "width": 228,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Smartscape",
+      "tileType": "PURE_MODEL",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 0,
+        "width": 456,
+        "height": 228
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Problems",
+      "tileType": "OPEN_PROBLEMS",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1634,
+        "width": 228,
+        "height": 228
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "World map",
+      "tileType": "APPLICATION_WORLDMAP",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1178,
+        "width": 456,
+        "height": 456
+      },
+      "tileFilter": {},
+      "assignedEntities": [
+        "GEOLOCATION-0000000000000000",
+        "WORLD"
+      ],
+      "metric": "APDEX"
+    },
+    {
+      "name": "Synthetic monitor health",
+      "tileType": "SYNTHETIC_TESTS",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 1634,
+        "width": 228,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 684,
+        "width": 190,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "##[Revenue Analysis](#dashboard;id={{.revenue}})"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 950,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## [Application Analysis](#dashboard;id={{ .rum }})"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 152,
+        "left": 950,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## [User Journey](#dashboard;id={{.rum}})"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 152,
+        "left": 684,
+        "width": 190,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "##[Infra Overview](#dashboard;id={{.capacity}})"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 684,
+        "width": 190,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "##[Database Overview](#dashboard;id={{.database}})"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 380,
+        "left": 684,
+        "width": 190,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "##[Service Overview](#dashboard;id={{.service}})"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 950,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## [Service Workflow](#serviceflow;sci=SERVICE-EBF3AD6010A6D340;gf=all;mode=RESPONSE_TIME)"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 380,
+        "left": 950,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## [Network Performance](#dashboard;gtf=-2h;id={{.network}})"
+    }
+  ]
+}

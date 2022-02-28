@@ -1,7 +1,24 @@
 config:
  - app: app.json
  - environment: environment.json
+ - application: selectortags.json
+ - db: dbselectortags.json
+ - services: services.json
 app:
  - name: app
 environment:
  - name: environment
+application:
+ - name: application
+ - selector: "type(APPLICATION),fromRelationships.calls(type(SERVICE),tag(environment:dt-orders))"
+ - format: "dt-orders"
+db:
+ - name: database
+ - selector: "environment:dt-orders"
+ - format: "dt-orders"
+services:
+ - name: service
+ - format: "{Service:DetectedName}"
+ - context: ENVIRONMENT
+ - key: app
+ - value: dt-orders 

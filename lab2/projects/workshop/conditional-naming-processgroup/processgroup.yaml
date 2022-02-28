@@ -1,0 +1,5 @@
+config:
+  - k8snamespace: processgroup.json
+k8snamespace:
+  - name: "Container.Namespace"
+  - format: "{ProcessGroup:KubernetesContainerName}.{ProcessGroup:KubernetesNamespace}"

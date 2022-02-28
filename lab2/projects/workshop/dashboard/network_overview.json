@@ -1,0 +1,566 @@
+{
+  "dashboardMetadata": {
+    "name": "{{ .name }}",
+    "shared": true,
+    "owner": "{{ .owner }}"
+  },
+  "tiles": [
+    {
+      "name": "Azure",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 608,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 304,
+        "width": 304,
+        "height": 228
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "-4455392537418905603",
+          "name": "CX 360"
+        }
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Top senders",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.net.nic.trafficOut",
+              "aggregation": "AVG",
+              "type": "BAR",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "nullbuiltin:host.net.nic.trafficIn|AVG|TOTAL|BAR|HOST": {
+              "lastModified": 1596026027913,
+              "customColor": "#b4e5f9"
+            },
+            "nullbuiltin:host.net.nic.trafficOut|AVG|TOTAL|BAR|HOST": {
+              "lastModified": 1596026030667,
+              "customColor": "#008cdb"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 304,
+        "width": 304,
+        "height": 228
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "-4455392537418905603",
+          "name": "CX 360"
+        }
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Top receivers",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.net.nic.trafficIn",
+              "aggregation": "AVG",
+              "type": "BAR",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            },
+            {
+              "metric": "builtin:host.net.nic.trafficOut",
+              "aggregation": "AVG",
+              "type": "BAR",
+              "entityType": "HOST",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": false,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "nullbuiltin:host.net.nic.trafficIn|AVG|TOTAL|BAR|HOST": {
+              "lastModified": 1596026027913,
+              "customColor": "#b4e5f9"
+            },
+            "nullbuiltin:host.net.nic.trafficOut|AVG|TOTAL|BAR|HOST": {
+              "lastModified": 1596026030667,
+              "customColor": "#008cdb"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "-4455392537418905603",
+          "name": "CX 360"
+        }
+      },
+      "filterConfig": {
+        "type": "HOST",
+        "customName": "Hosts",
+        "defaultName": "Hosts",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "Network status",
+      "tileType": "NETWORK_MEDIUM",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 0,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "-4455392537418905603",
+          "name": "CX 360"
+        }
+      }
+    },
+    {
+      "name": "AWS cloud",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 646,
+        "width": 608,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Network status",
+      "tileType": "NETWORK_MEDIUM",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 646,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "8374109949697287049",
+          "name": "MTD"
+        }
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 950,
+        "width": 304,
+        "height": 228
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "8374109949697287049",
+          "name": "MTD"
+        }
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Top senders",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.net.nic.trafficOut",
+              "aggregation": "AVG",
+              "type": "BAR",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "nullbuiltin:host.net.nic.trafficIn|AVG|TOTAL|BAR|HOST": {
+              "lastModified": 1596026027913,
+              "customColor": "#b4e5f9"
+            },
+            "nullbuiltin:host.net.nic.trafficOut|AVG|TOTAL|BAR|HOST": {
+              "lastModified": 1596026030667,
+              "customColor": "#008cdb"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 950,
+        "width": 304,
+        "height": 228
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "8374109949697287049",
+          "name": "MTD"
+        }
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Top receivers",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.net.nic.trafficIn",
+              "aggregation": "AVG",
+              "type": "BAR",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            },
+            {
+              "metric": "builtin:host.net.nic.trafficOut",
+              "aggregation": "AVG",
+              "type": "BAR",
+              "entityType": "HOST",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": false,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "nullbuiltin:host.net.nic.trafficIn|AVG|TOTAL|BAR|HOST": {
+              "lastModified": 1596026027913,
+              "customColor": "#b4e5f9"
+            },
+            "nullbuiltin:host.net.nic.trafficOut|AVG|TOTAL|BAR|HOST": {
+              "lastModified": 1596026030667,
+              "customColor": "#008cdb"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 646,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "8374109949697287049",
+          "name": "MTD"
+        }
+      },
+      "filterConfig": {
+        "type": "HOST",
+        "customName": "Hosts",
+        "defaultName": "Hosts",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1254,
+        "width": 76,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## [⇦](#dashboard;id= {{ .backbtn}})\n![BackButton]()"
+    },
+    {
+      "name": "Roud Trip Time",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 0,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:tech.generic.network.latency",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.process_group_instance"
+          ],
+          "sortBy": "DESC",
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.process_group_instance",
+                "filterType": "TAG",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "MTD-Environment:eu-prod1",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "limit": 100,
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 1000,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 1500,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "Roud Trip Time",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 646,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:host.net.nic.connectivity",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "sortBy": "ASC",
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "limit": 100,
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 99,
+                "color": "#7dc540"
+              },
+              {
+                "value": 98,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    }
+  ]
+}
