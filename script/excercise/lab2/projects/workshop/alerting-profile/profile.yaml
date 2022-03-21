@@ -1,0 +1,5 @@
+config:
+ - dtordersteam: profile.json
+dtordersteam:
+ - name: dtorders team
+ - mzId: projects/workshop/management-zone/dt-orders.id

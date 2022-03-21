@@ -1,0 +1,5 @@
+config:
+ - dtordersnotification: notification.json
+dtordersnotification:
+ - name: dtorders notification
+ - alertingProfile: projects/workshop/alerting-profile/dtordersteam.id

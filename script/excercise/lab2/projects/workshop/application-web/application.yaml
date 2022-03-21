@@ -1,0 +1,4 @@
+config:
+ - dt-orders: application.json
+dt-orders:
+ - name: dt-orders

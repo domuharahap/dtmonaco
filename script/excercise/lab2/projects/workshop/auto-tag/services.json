@@ -1,0 +1,31 @@
+{
+  "name": "{{ .name }}",
+  "description": null,
+  "rules": [
+    {
+      "type": "SERVICE",
+      "enabled": true,
+      "valueFormat": "{{ .format }}",
+      "propagationTypes": [],
+      "conditions": [
+        {
+          "key": {
+            "attribute": "SERVICE_TAGS",
+            "type": "STATIC"
+          },
+          "comparisonInfo": {
+            "type": "TAG",
+            "operator": "EQUALS",
+            "value": {
+              "context": "{{.context}}",
+              "key": "{{ .key }}",
+              "value": " {{ .value }}"
+            },
+            "negate": false
+          }
+        }
+      ]
+    }
+  ],
+  "entitySelectorBasedRules": []
+}

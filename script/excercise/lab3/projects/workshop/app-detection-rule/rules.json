@@ -1,0 +1,8 @@
+{
+ "applicationIdentifier": "{{ .applicationId }}",
+ "filterConfig": {
+  "applicationMatchTarget": "URL",
+  "applicationMatchType": "CONTAINS",
+  "pattern": "{{ .pattern }}"
+ }
+}

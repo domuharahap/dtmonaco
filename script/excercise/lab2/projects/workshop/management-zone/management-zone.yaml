@@ -1,0 +1,6 @@
+config:
+ - dt-orders: management-zone.json
+dt-orders:
+ - name: dt-orders
+ - tags: dt-orders
+
