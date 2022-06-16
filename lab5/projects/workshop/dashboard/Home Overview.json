@@ -1,0 +1,610 @@
+ {
+  "metadata": {
+    "configurationVersions": [
+      6
+    ],
+    "clusterVersion": "1.242.188.20220602-161053"
+  },
+  "id": "0ec89017-bf34-4267-92ed-b1ebdce4d8d1",
+  "dashboardMetadata": {
+    "name": "Application Overview",
+    "shared": false,
+    "owner": "admin",
+    "popularity": 10
+  },
+  "tiles": [
+    {
+      "name": "Quick overview",
+      "nameSize": "",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "OPEN_PROBLEMS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 152,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": false
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "SYNTHETIC_TESTS",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 0,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": false
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "DATABASES_OVERVIEW",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 152,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": false
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "PURE_MODEL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 0,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 532,
+        "width": 190,
+        "height": 190
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Application health",
+      "nameSize": "",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 342,
+        "width": 988,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Infrastructure",
+      "nameSize": "",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1368,
+        "width": 608,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "NETWORK_MEDIUM",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1368,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Host health",
+      "nameSize": "",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 456,
+        "left": 342,
+        "width": 190,
+        "height": 190
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Application health",
+      "nameSize": "",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 342,
+        "width": 190,
+        "height": 190
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Database health",
+      "nameSize": "",
+      "tileType": "DATABASES_OVERVIEW",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 342,
+        "width": 190,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "Synthetic monitor health",
+      "nameSize": "",
+      "tileType": "SYNTHETIC_TESTS",
+      "configured": true,
+      "bounds": {
+        "top": 228,
+        "left": 532,
+        "width": 190,
+        "height": 228
+      },
+      "tileFilter": {},
+      "chartVisible": true
+    },
+    {
+      "name": "World map",
+      "tileType": "APPLICATION_WORLDMAP",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 722,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {},
+      "assignedEntities": [
+        "GEOLOCATION-0000000000000000",
+        "WORLD"
+      ],
+      "metric": "APDEX"
+    },
+    {
+      "name": "Live user activity",
+      "tileType": "UEM_ACTIVE_SESSIONS",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 722,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "User breakdown",
+      "tileType": "USERS",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1026,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {},
+      "assignedEntities": [
+        "APPLICATION-EA7C4B59F27D43EB"
+      ]
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 0,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": false
+    },
+    {
+      "name": "",
+      "nameSize": "",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 152,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {},
+      "chartVisible": false
+    },
+    {
+      "name": "Network metrics",
+      "tileType": "NETWORK",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1672,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Host Consumptions",
+      "nameSize": "",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1368,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "CPU usage",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:host.cpu.usage",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "enabled": true
+        },
+        {
+          "id": "B",
+          "metric": "builtin:host.mem.usage",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "enabled": true
+        },
+        {
+          "id": "C",
+          "metric": "builtin:host.disk.free",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "enabled": true
+        },
+        {
+          "id": "D",
+          "metric": "builtin:host.net.nic.connectivity",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TABLE",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "B:",
+            "unitTransform": "",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "C:",
+            "unitTransform": "",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          },
+          {
+            "matcher": "D:",
+            "properties": {
+              "color": "DEFAULT"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "columnId": "CPU usage %",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 85,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 95,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "A",
+            "visible": true
+          },
+          {
+            "axisTarget": "LEFT",
+            "columnId": "Memory used %",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 80,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 90,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "B",
+            "visible": true
+          },
+          {
+            "axisTarget": "LEFT",
+            "columnId": "Disk available %",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 85,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 95,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "C",
+            "visible": true
+          },
+          {
+            "axisTarget": "LEFT",
+            "columnId": "NIC connectivity",
+            "rules": [
+              {
+                "value": 99.9,
+                "color": "#7dc540"
+              },
+              {
+                "value": 98,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "D",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": "",
+        "foldTransformation": "TOTAL",
+        "foldAggregation": "AVG"
+      }
+    },
+    {
+      "name": "Apdex",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 456,
+        "left": 532,
+        "width": 190,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "Graph",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType.geoBig",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.geolocation"
+          ],
+          "sortBy": "DESC",
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "limit": 100,
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "HONEYCOMB",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "unitTransform": "",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {
+          "yAxis": "VALUE"
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "columnId": "Apdex (by geolocation, user type) [web]",
+            "rules": [
+              {
+                "value": 0.85,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.5,
+                "color": "#e6be00"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "A",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {
+          "showHive": true,
+          "showLegend": true,
+          "showLabels": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    }
+  ]
+}
